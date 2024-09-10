@@ -1,4 +1,4 @@
-import { ApiClient, ExternalEvent } from '../src/main'
+import { ApiClient } from 'community-api-sdk'
 
 async function main() {
     const client = new ApiClient(
