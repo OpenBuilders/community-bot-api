@@ -76,9 +76,9 @@ curl -X POST https://api.joincommunity.xyz/external/events \
 **Host:** `https://api.joincommunity.xyz`
 
 ### `/external/participant/tg/:id`
-Retrieve participant by telegram ID
-**URI:** `https://api.joincommunity.xyz/external/participant/tg/:id`
-**Method:** `GET`
+Retrieve participant by telegram ID  
+**URI:** `https://api.joincommunity.xyz/external/participant/tg/:id`  
+**Method:** `GET`  
 **Headers:**
 ```json
 {
@@ -87,9 +87,9 @@ Retrieve participant by telegram ID
 ```
 
 ### `/external/participant/wallet/:walletAddress`
-Retrieve participant by wallet address
-**URI:** `https://api.joincommunity.xyz/external/participant/wallet/:walletAddress`
-**Method:** `GET`
+Retrieve participant by wallet address  
+**URI:** `https://api.joincommunity.xyz/external/participant/wallet/:walletAddress`  
+**Method:** `GET`  
 **Headers:**
 ```json
 {
@@ -98,9 +98,9 @@ Retrieve participant by wallet address
 ```
 
 ### `/external/events`
-Post external events
-**URI:** `https://api.joincommunity.xyz/external/events`
-**Method:** `POST`
+Post external events  
+**URI:** `https://api.joincommunity.xyz/external/events`  
+**Method:** `POST`  
 **Headers:**
 ```json
 {
