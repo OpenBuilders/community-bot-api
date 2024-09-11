@@ -14,7 +14,6 @@ async function main() {
         {
             slug:           'test-2',                                           // Event slug
             walletAddress:  "EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9", // e.g: EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9
-            isDelete:       true,                                               // If task should be deleted
         }
     ]
     const response = await client.postEvent(events)
