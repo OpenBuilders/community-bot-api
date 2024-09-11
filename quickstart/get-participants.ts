@@ -2,7 +2,7 @@ import { ApiClient } from 'community-api-sdk'
 
 async function main() {
     const client = new ApiClient(
-        'api-key',
+        'API_KEY',
     )
     
     const participantByTG       = await client.getParticipantByTG(BigInt(1))
