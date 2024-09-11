@@ -1,6 +1,6 @@
 # Community API SDK
 This SDK provides simple interface for interacting with Community external API. It enables developers to seamlessly integrate service's features into their applications, allowing easy communication with API, participants retrieval and external events posting.
-
+![Demo](/images/demo.avif)
 ## Installation
 ```bash
 npm i community-api-sdk
