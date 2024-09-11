@@ -17,7 +17,6 @@
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "community-api-sdk": "*"
+    "axios": "^1.7.7"
   }
 }
