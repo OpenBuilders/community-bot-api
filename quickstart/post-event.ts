@@ -1,5 +1,5 @@
-import { ApiClient, ExternalEvent } from 'community-api-sdk'
-
+import { ApiClient, ExternalEvent } from 'community-bot-api'
+import 'community-bot-api'
 async function main() {
     const client = new ApiClient(
         'API_KEY',

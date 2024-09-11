@@ -7,12 +7,12 @@ npm i community-api-sdk
 ```
 
 ## Usage
-> **Requires unique API key - contact [@community_bot](https://t.me/community_bot) admins**
+> **Requires unique API key - contact [@metaverserk](https://t.me/metaverserk) or [@chak_zefir](https://t.me/chak_zefir)**
 
 ### Get participant
 Typescript code snippet [[Here]](/quickstart/get-participants.ts)
 ```ts
-import { ApiClient } from 'community-api-sdk'
+import { ApiClient } from 'community-bot-api'
 
 async function main() {
     const client = new ApiClient(
@@ -42,7 +42,7 @@ curl -X GET https://api.joincommunity.xyz/external/participant/wallet/EQAt_V50zZ
 ### Post events
 Typescript code snippet [[Here]](/quickstart/post-event.ts)
 ```ts
-import { ApiClient, ExternalEvent } from 'community-api-sdk'
+import { ApiClient, ExternalEvent } from 'community-bot-api'
 
 async function main() {
     const client = new ApiClient(
@@ -58,7 +58,6 @@ async function main() {
         {
             slug:           'test-2',                                           // Event slug
             walletAddress:  "EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9", // e.g: EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9
-            isDelete:       true,                                               // If task should be deleted
         }
     ]
     const response = await client.postEvent(events)
@@ -77,7 +76,7 @@ curl -X POST https://api.joincommunity.xyz/external/events \
 ```
 
 ## API
-> **Requires unique API key - contact [@community_bot](https://t.me/community_bot) admins**
+> **Requires unique API key - contact [@metaverserk](https://t.me/metaverserk) or [@chak_zefir](https://t.me/chak_zefir)**
 
 **Host:** `https://api.joincommunity.xyz`
 

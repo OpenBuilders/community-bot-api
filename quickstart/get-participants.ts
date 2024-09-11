@@ -1,4 +1,4 @@
-import { ApiClient } from 'community-api-sdk'
+import { ApiClient } from 'community-bot-api'
 
 async function main() {
     const client = new ApiClient(
