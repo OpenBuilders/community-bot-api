@@ -1,12 +1,11 @@
 {
   "name": "community-bot-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This SDK provides simple interface for interacting with Community external API. It enables developers to seamlessly integrate service's features into their applications, allowing easy communication with API, participants retrieval and external events posting.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc",
-    "publish": "rm -rf dist && tsc && npm publish"
+    "build": "rm -rf dist && tsc"
   },
   "keywords": [],
   "author": "",
