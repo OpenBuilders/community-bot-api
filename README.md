@@ -7,7 +7,7 @@ npm i community-api-sdk
 ```
 
 ## Usage
-> **Requires unique API key - contact [@metaverserk](https://t.me/metaverserk) or [@chak_zefir](https://t.me/chak_zefir)**
+> **Requires unique API key - contact [@community_bot](https://t.me/community_bot) admins**
 
 ### Get participant
 Typescript code snippet [[Here]](/quickstart/get-participants.ts)
@@ -77,7 +77,7 @@ curl -X POST https://api.joincommunity.xyz/external/events \
 ```
 
 ## API
-> **Requires unique API key - contact Community APP admin**
+> **Requires unique API key - contact [@community_bot](https://t.me/community_bot) admins**
 
 **Host:** `https://api.joincommunity.xyz`
 
