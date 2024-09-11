@@ -19,7 +19,7 @@ async function main() {
         'API_KEY',
     )
     
-    const participantByTG       = await client.getParticipantByTG(BigInt(1))
+    const participantByTG       = await client.getParticipantByTG('1')
     const participantByWallet   = await client.getParticipantByWallet("EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9")
     
     console.log(participantByTG.data, participantByWallet.data)
@@ -52,7 +52,7 @@ async function main() {
     const events: ExternalEvent[] = [
         {
             slug:       'test-1',   // Event slug
-            telegramId: BigInt(1),  // Telegram ID to identify user or wallet address
+            telegramId: '1',        // Telegram ID to identify user or wallet address
             isDelete:   true,       // If task should be deleted
         },
         {
@@ -72,7 +72,7 @@ cURL example
 curl -X POST https://api.joincommunity.xyz/external/events \
 -H "api-key: API_KEY" \
 -H "Content-Type: application/json" \
--d '[{"slug":"some-unique-slug","telegramId":1,"isDelete":true}]'
+-d '[{"slug":"some-unique-slug","telegramId":"1","isDelete":true}]'
 ```
 
 ## API
@@ -118,7 +118,7 @@ Post external events
 [
     {
         "slug": "example-slug-1",
-        "telegramId": 1,
+        "telegramId": "1",
         "isDelete": true,
     },
     {

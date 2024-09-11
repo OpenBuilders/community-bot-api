@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export interface ExternalEvent {
     slug:           string, // Event slug
-    telegramId?:    BigInt, // Telegram ID to identify user or wallet address
+    telegramId?:    string, // Telegram ID to identify user or wallet address
     walletAddress?: string, // e.g: EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9
     isDelete?:      boolean // If task should be deleted
 }
@@ -67,7 +67,7 @@ export class ApiClient {
         }
     }
 
-    async getParticipantByTG(telegramId: BigInt) {
+    async getParticipantByTG(telegramId: string) {
         try {
             const response = await axios.get<ExternalParticipantResponse>(
                 `${ApiClient.API_URL}${ApiClient.API_PARTICIPANT_TG}/${telegramId}`,
