@@ -7,10 +7,15 @@ async function main() {
 
     const events: ExternalEvent[] = [
         {
-            slug: 'test',
-            telegramId: BigInt(1),
-            isDelete: true,
+            slug:       'test-1',   // Event slug
+            telegramId: BigInt(1),  // Telegram ID to identify user or wallet address
+            isDelete:   true,       // If task should be deleted
         },
+        {
+            slug:           'test-2',                                           // Event slug
+            walletAddress:  "EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9", // e.g: EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9
+            isDelete:       true,                                               // If task should be deleted
+        }
     ]
     const response = await client.postEvent(events)
     
