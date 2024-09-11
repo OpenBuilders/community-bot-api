@@ -2,9 +2,9 @@ import axios from 'axios'
 
 export interface ExternalEvent {
     slug:           string, // Event slug
-    externalId?:    number, // Any ID in your system
     telegramId?:    BigInt, // Telegram ID to identify user or wallet address
     walletAddress?: string, // e.g: EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9
+    isDelete?:      boolean // If task should be deleted
 }
 
 export interface ExternalEventResponse {

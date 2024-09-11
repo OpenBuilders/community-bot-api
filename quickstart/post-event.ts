@@ -9,6 +9,7 @@ async function main() {
         {
             slug: 'test',
             telegramId: BigInt(1),
+            isDelete: true,
         },
     ]
     const response = await client.postEvent(events)

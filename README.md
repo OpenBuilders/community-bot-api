@@ -53,6 +53,7 @@ async function main() {
         {
             slug: 'test',
             telegramId: BigInt(1),
+            isDelete: true,
         },
     ]
     const response = await client.postEvent(events)
@@ -67,7 +68,7 @@ cURL example
 curl -X POST https://api.joincommunity.xyz/external/events \
 -H "api-key: API_KEY" \
 -H "Content-Type: application/json" \
--d '[{"slug":"some-unique-slug","telegramId":"1"}]'
+-d '[{"slug":"some-unique-slug","telegramId":1,"isDelete":true}]'
 ```
 
 ## API
@@ -113,16 +114,12 @@ Post external events
 [
     {
         "slug": "example-slug-1",
-        "telegramId": "1",
+        "telegramId": 1,
+        "isDelete": true,
     },
     {
         "slug": "example-slug-2",
-        "externalId": "1",
-    },
-    {
-        "slug": "example-slug-3",
         "walletAddress": "EQAt_V50zZzQW7hjFtqaj20ZPnN7fp4F5X_cKQWxkt_DMEl9",
     },
-    ...
 ]
 ```
