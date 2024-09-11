@@ -77,7 +77,7 @@ curl -X POST https://api.joincommunity.xyz/external/events \
 ```
 
 ## API
-> **Requires unique API key - contact [@metaverserk](https://t.me/metaverserk) or [@chak_zefir](https://t.me/chak_zefir)**
+> **Requires unique API key - contact Community APP admin**
 
 **Host:** `https://api.joincommunity.xyz`
 
