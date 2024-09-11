@@ -51,7 +51,7 @@ export class ApiClient {
     async postEvent(eventData: ExternalEvent[]): Promise<ExternalEventResponse> {
         try {
             const response = await axios.post<ExternalEventResponse>(
-                `${ApiClient.API_URL}/${ApiClient.API_EVENTS}`,
+                `${ApiClient.API_URL}${ApiClient.API_EVENTS}`,
                 eventData,
                 {
                     headers: {
@@ -70,7 +70,7 @@ export class ApiClient {
     async getParticipantByTG(telegramId: BigInt) {
         try {
             const response = await axios.get<ExternalParticipantResponse>(
-                `${ApiClient.API_URL}/${ApiClient.API_PARTICIPANT_TG}/${telegramId}`,
+                `${ApiClient.API_URL}${ApiClient.API_PARTICIPANT_TG}/${telegramId}`,
                 {
                     headers: {
                         'api-key': this.apiKey,
@@ -87,7 +87,7 @@ export class ApiClient {
     async getParticipantByWallet(wallet: string) {
         try {
             const response = await axios.get<ExternalParticipantResponse>(
-                `${ApiClient.API_URL}/${ApiClient.API_PARTICIPANT_WALLET}/${wallet}`,
+                `${ApiClient.API_URL}${ApiClient.API_PARTICIPANT_WALLET}/${wallet}`,
                 {
                     headers: {
                         'api-key': this.apiKey,
